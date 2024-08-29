@@ -1,0 +1,61 @@
+/* 
+ * Mobile styles.
+ * This CSS file is loaded by the browser when the screen width is up to 450px.
+ * These styles are optimized for mobile devices.
+ */
+
+ main {
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width */
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+/* Navigation bar styles */
+nav {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    background-color: #333; /* Dark background for better contrast */
+    margin: 0;
+}
+
+nav a {
+    color: #fff; /* White text color for contrast */
+    text-align: center; /* Center-align text */
+    padding: 20px 15px; /* Increase padding for touch-friendly design */
+    text-decoration: none;
+    font-size: 12px; /* Increase font size for readability */
+}
+
+nav a:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+/* Card styles for mobile devices */
+.card {
+    width: 100%; /* Full-width for single-column layout */
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: block;
+}
+.card h3 {
+    font-size: 1.1em;
+}
+.card p{
+    font-size: .8em;
+}
+.card img {
+    padding: 20px;
+    width: 90px;
+    height: 90px;
+}
+ footer {
+    background-color: #3EE179; /* Light blue background */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+

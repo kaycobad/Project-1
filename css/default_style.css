@@ -1,0 +1,156 @@
+/* 
+ * Default styles for large screens.
+ * This stylesheet will be used for screen widths above 900px (desktop).
+ */
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: #ddd;
+    margin-top: 50px;
+}
+
+/* Header Styles */
+header {
+    background: black url('../images/background.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+    margin: 0;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0;
+}
+
+/* Navigation Bar Styles */
+
+nav ul {
+    list-style-type: none;
+    background-color: #2d3437;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: #135367;
+    color: #ffffff;
+}
+
+nav .right {
+    background-color: #E1693D;
+    color: #000000;
+    float: right;
+}
+
+nav .active {
+    background-color: #ffffff;
+    color: #ff6347; /* Change text color to highlight the active link */
+    font-weight: bold; /* Make the text bold */
+}
+nav {
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* Main Styles */
+main {
+    width:90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    
+}
+    
+/* Card Styles */
+.card {
+    background-color: #ffffff;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card img {
+    float: left;
+    background-color: #E2693D;/* Bright background color */
+    padding: 40px;
+    margin-right: 15px;/* Push elements to the right */
+}
+
+.card h3, .card p {
+    margin: 0;
+    padding: 10px;/* Increase white space */
+   
+}
+.card h3 {
+    font-size: 1.5em; /* Adjust font size*/
+}
+.card p {
+    font-size:1em;/* Adjust font size*/
+    line-height: 1.6;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 900px) { 
+    main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .card-container {
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        margin: 10px;
+        width: calc(50% - 20px);
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card h3 {
+        font-size: 1.5em;
+    }
+
+    .card p {
+        font-size: 1.1em;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2d3437;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+

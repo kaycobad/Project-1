@@ -1,0 +1,57 @@
+/* 
+ * Tablet styles.
+ * This CSS file is loaded by the browser when the screen width is between 451px and 900px.
+ * These styles are optimized for tablet devices.
+ */
+
+ main {
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width */
+    padding: 15px;
+    background-color: #e0e0e0;
+
+}
+/* Navigation bar styles */
+nav {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; /* Space out links evenly */
+    background-color: #333; /* Dark background for better contrast */
+    padding: 10px;
+}
+
+nav a {
+    color: #fff; /* White text color for contrast */
+    text-align: center; /* Center-align text */
+    padding: 10px 20px; /* Adequate padding for touch devices */
+    text-decoration: none;
+    font-size: 18px; /* Increase font size for readability */
+    border-bottom: none; /* Remove border since links are arranged horizontally */
+}
+
+nav a:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+/* Card styles for tablets */
+.card {
+    width: 100%; /* Display 2 cards per row */
+    margin: 10px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+.card img {
+    padding: 25px;
+}
+
+ footer {
+    background-color: #D3E13C; /* Medium blue background */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
